@@ -10,10 +10,9 @@ int main()
 
     for (int row = 0; row < rows; row++)
     {
-        int totalCols = row + 1;
-        for (int col = 0; col < totalCols; col++)
+        for (int col = 0; col < rows - row; col++)
         {
-            if (row == 0 || row == rows - 1 || col == 0 || row == col)
+            if (row == 0 || row == rows - 1 || col == 0 || col == rows - row - 1)
             {
                 cout << "* ";
             }
@@ -24,5 +23,6 @@ int main()
         }
         cout << endl;
     }
+
     return 0;
 }
