@@ -10,7 +10,7 @@ int main()
 
     for (int row = 0; row < rows; row++)
     {
-        for (int col = 0; col <= row; col++)
+        for (int col = 0; col < rows - row; col++)
         {
             cout << "* ";
         }
