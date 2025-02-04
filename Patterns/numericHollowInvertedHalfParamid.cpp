@@ -10,11 +10,11 @@ void numericHollowInvertedHalfParamid(int n)
         {
             if (i == 0 || j == i + 1 || j == n)
             {
-                cout << j;
+                cout << j << " ";
             }
             else
             {
-                cout << " ";
+                cout << "  ";
             }
         }
         cout << endl;
