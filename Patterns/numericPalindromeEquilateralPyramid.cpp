@@ -29,7 +29,7 @@ int main()
             }
             else if (j > n)
             {
-                cout << c;
+                cout << c--;
             }
         }
         k++;
