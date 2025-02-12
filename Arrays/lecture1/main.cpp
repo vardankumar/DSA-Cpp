@@ -2,8 +2,37 @@
 #include <vector>
 using namespace std;
 
+void print(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
+
+void solve1(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = arr[i] * 10;
+    }
+}
+
 int main()
 {
+
+    // ARRAYS ARE PASSED BY REFERENCE
+
+    // -----------------------------------------------
+
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = 5;
+
+    solve1(arr, size);
+    print(arr, size);
+
+    // ----------------------------------------
+
     // int arr[10];
 
     // // error because no size;
@@ -25,18 +54,20 @@ int main()
 
     // taking input in array on specific indexes
 
-    int arr[10];
+    // --------------------------------------
 
-    for (int i = 0; i < 10; i++)
-    {
-        cout << "Enter the value for box index: " << i << endl;
-        cin >> arr[i];
-    }
+    // int arr[5];
 
-    for (int j = 0; j < 10; j++)
-    {
-        cout << arr[j] << " ";
-    }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << "Enter the value for box index: " << i << endl;
+    //     cin >> i[arr];
+    // }
+
+    // for (int j = 0; j < 5; j++)
+    // {
+    //     cout << &j[arr] << " ";
+    // }
 
     return 0;
 }
