@@ -18,6 +18,19 @@ void solve1(int arr[], int n)
     }
 }
 
+bool findTarget(int arr[], int size, int target)
+{
+    for (int i = 0; i < size; i++)
+    {
+        int currentElement = arr[i];
+        if (currentElement == target)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 int main()
 {
 
@@ -27,9 +40,13 @@ int main()
 
     int arr[] = {10, 20, 30, 40, 50};
     int size = 5;
+    int target = 50;
 
-    solve1(arr, size);
-    print(arr, size);
+    bool ans = findTarget(arr, size, target);
+    cout << ans << endl;
+
+    // solve1(arr, size);
+    // print(arr, size);
 
     // ----------------------------------------
 
