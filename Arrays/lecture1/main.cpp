@@ -31,19 +31,51 @@ bool findTarget(int arr[], int size, int target)
     return false;
 }
 
+int findMax(int arr[], int size)
+{
+}
+
+void printZeroesAndOnes(int arr[], int size)
+{
+    int zeroCount = 0;
+    int oneCount = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == 0)
+        {
+            zeroCount++;
+        }
+        else if (arr[i] == 1)
+        {
+            oneCount++;
+        }
+    }
+    cout << "Number of zeros in array : " << zeroCount << endl;
+    cout << "Number of ones in array : " << oneCount << endl;
+}
+
 int main()
 {
+
+    // Counting zeroes and ones in an array linearly
+
+    int arr[] = {0, 1, 0, 0, 1, 1, 0, 1, 0};
+    int size = 9;
+
+    printZeroesAndOnes(arr, size);
+
+    // --------------------------------------------
 
     // ARRAYS ARE PASSED BY REFERENCE
 
     // -----------------------------------------------
 
-    int arr[] = {10, 20, 30, 40, 50};
-    int size = 5;
-    int target = 50;
+    // int arr[] = {10, 20, 30, 40, 50};
+    // int size = 5;
+    // int target = 50;
 
-    bool ans = findTarget(arr, size, target);
-    cout << ans << endl;
+    // bool ans = findTarget(arr, size, target);
+    // cout << ans << endl;
 
     // solve1(arr, size);
     // print(arr, size);
