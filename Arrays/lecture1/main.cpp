@@ -54,15 +54,41 @@ void printZeroesAndOnes(int arr[], int size)
     cout << "Number of ones in array : " << oneCount << endl;
 }
 
+void extremesPrinting(int arr[], int size)
+{
+    int left = 0;
+    int right = size - 1;
+    while (left <= right)
+    {
+        if (left == right)
+        {
+            cout << arr[left++] << " ";
+        }
+        else
+        {
+            cout << arr[left++] << " ";
+            cout << arr[right--] << " ";
+        }
+    }
+}
+
 int main()
 {
 
+    // ------- TWO POINTERS APPROACH IN ARRAY ----------
+
+    int arr[] = {100, 200, 300, 400, 500, 600, 700};
+    int size = 7;
+    extremesPrinting(arr, size);
+
+    // -----------------------------------------------
+
     // Counting zeroes and ones in an array linearly
 
-    int arr[] = {0, 1, 0, 0, 1, 1, 0, 1, 0};
-    int size = 9;
+    // int arr[] = {0, 1, 0, 0, 1, 1, 0, 1, 0};
+    // int size = 9;
 
-    printZeroesAndOnes(arr, size);
+    // printZeroesAndOnes(arr, size);
 
     // --------------------------------------------
 
