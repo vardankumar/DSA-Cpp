@@ -15,7 +15,7 @@ int main()
 {
 
     int arr[] = {2, 4, 1, 4, 1, 3, 3};
-    int size = 5;
+    int size = 7;
 
     int ans = findUniqueNumber(arr, size);
     cout << "Unique number is: " << ans << endl;
